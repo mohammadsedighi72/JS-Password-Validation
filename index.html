@@ -83,6 +83,7 @@
                 var HasSymbol = new RegExp('\\W');
                 var Confirm = document.getElementById('confirm');
 
+                // this part use for comments color
                 if(HasLowerCase.test(password.value)){
                     document.getElementById('LowerCase').setAttribute('class' , 'd-block text-success');
                 }
@@ -127,6 +128,8 @@
 
                 Confirm.setAttribute('class' , 'text-danger mt-2');
                 Confirm.innerHTML = 'Password Not Match';
+
+                // end of comments color
 
                 if(HasLowerCase.test(password.value) && HasUpperCase.test(password.value) 
                     && HasNumber.test(password.value) && HasSymbol.test(password.value)){
