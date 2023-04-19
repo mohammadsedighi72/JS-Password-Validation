@@ -11,3 +11,4 @@
  5. you should not contain any Space
  6. your password can not be higher than 32 characters
  7. your password can not be lower than 8 characters
+ 8. your password must be match
