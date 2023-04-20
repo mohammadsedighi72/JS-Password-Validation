@@ -132,7 +132,8 @@
                 // end of comments color
 
                 if(HasLowerCase.test(password.value) && HasUpperCase.test(password.value) 
-                    && HasNumber.test(password.value) && HasSymbol.test(password.value)){
+                    && HasNumber.test(password.value) && HasSymbol.test(password.value)
+                    && password.value.indexOf(' ') < 0){
                     if(password.value == re_password.value && password.value.length >= 8){
                         if(password.value.length <= 32){
                             password.setAttribute('class' , 'form-control border-success');
